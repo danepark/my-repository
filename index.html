@@ -60,7 +60,7 @@
 
         iframe {
           float: left;
-          maring 0 20px 20px 0;
+          margin: 0 20px 20px 0;
           max-width: 100%
         }
 
@@ -74,7 +74,7 @@
         }
 
         .further-info a {
-          width: 25%
+          width: 25%;
           display: block;
           float: left;
         }
@@ -90,7 +90,7 @@
         /* Red panda image */
         .red-panda img {
           display: block;
-          max-width: 100%
+          max-width: 100%;
         }
 
       </style>
@@ -105,7 +105,7 @@
 
       <main>
         <article>
-          <iframe width="400" height="280" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
           <!-- insert ifram from youtube -->
 
           <h2>Rocking the free web</h2>
@@ -122,39 +122,42 @@
           <a href="https://www.mozilla.org/en-US/firefox/new/">
             <img srcset="firefox-logo-120w.png 120w,
                          firefox-logo-400w.png 400w"
-                 sizes="(max-width: 320px) 120px,
-                        (max-width: 480px) 400px,
-                        800px"
+                 sizes="(max-width: 480px) 120px,
+                        300px"
                  alt="Firefox logo"
                  src="firefox-logo-400w.png">
           </a>
           <a href="https://www.mozilla.org/">
             <img srcset="mozilla-dinosaur-head-120w.png 120w,
                          mozilla-dinosaur-head-400w.png 400w"
-                 sizes="(max-width: 320px) 120px,
-                        (max-width: 480px) 400px,
-                        800px"
+                 sizes="(max-width: 480px) 120px,
+                        300px"
                  alt="Mozilla dinosaur head logo"
                  src="mozilla-dinosaur-head-400w.png">
           </a>
           <a href="https://addons.mozilla.org/">
             <img srcset="firefox-addons-120w.jpg 120w,
-                         firefox-addons-400w.jpg"
-                 sizes="(max-width: 320px) 120px,
-                        (max-width: 480px) 400px"
+                         firefox-addons-400w.jpg 400w"
+                 sizes="(max-width: 480px) 120px,
+                        300px"
                  alt="Firefox addon logo"
                  src="firefox-addons-400w.jpg">
           </a>
           <a href="https://developer.mozilla.org/en-US/">
-            <img>
+            <img src="mdn.svg" alt="The Mozilla Developer Network Logo">
           </a>
           <div class="clearfix"></div>
         </div>
 
         <div class="red-panda">
+          <picture>
+            <source media="(max-width: 480px)" srcset="red-panda-600w.jpg">
+            <source media="(min-width: 481px)" srcset="red-panda-1200w.jpg">
+            <img src="red-panda-1200w.jpg" alt="Red panda curled up in the tree branches">
+          </picture>
           <!-- insert picture element -->
         </div>
-
+      </article>
       </main>
     </body>
   </html>
